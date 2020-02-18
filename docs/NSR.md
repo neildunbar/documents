@@ -27,7 +27,7 @@ f.	Configure each network boundary control (firewall, switch, router, gateway, o
 
 g.	Configure Issuing Systems, Certificate Management Systems, Security Support Systems, and Front-End / Internal-Support Systems by removing or disabling all accounts, applications, services, protocols, and ports that are not used in the CA’s or Delegated Third Party’s operations and allowing only those that are approved by the CA or Delegated Third Party;
 
-h.	Review configurations of Issuing Systems, Certificate Management Systems, Security Support Systems, and Front-End / Internal-Support Systems on at least a weekly basis to determine whether any changes violated the CA’s security policies;
+h.	Ensure that the CA’s security policies encompass a change management process, following the principles of documentation, approval and testing, and to ensure that all changes to Certificate Systems, Issuing Systems, Certificate Management Systems, Security Support Systems, and Front-End / Internal-Support Systems follow said change management process;
 
 i.	Grant administration access to Certificate Systems only to persons acting in Trusted Roles and require their accountability for the Certificate System’s security;
 
@@ -88,7 +88,7 @@ o.	Restrict remote administration or access to an Issuing System, Certificate Ma
  
 Certification Authorities and Delegated Third Parties SHALL:
 
-a.	Implement a Security Support System under the control of CA or Delegated Third Party Trusted Roles that monitors, detects, and reports any security-related configuration change to Certificate Systems;
+a.	Implement a System under the control of CA or Delegated Third Party that continuously monitors, detects, and alerts personnel to any modification to Certificate Systems, Issuing Systems, Certificate Management Systems, Security Support Systems, and Front-End / Internal-Support Systems unless the modification has been authorized through a change management process.  The CA or Delegated Third Party  shall respond to the alert and initiate a plan of action within at most twenty-four (24) hours.
 
 b.	Identify those Certificate Systems under the control of CA or Delegated Third Party Trusted Roles capable of monitoring and logging system activity and enable those systems to continuously monitor and log system activity;
 
@@ -182,6 +182,4 @@ f.	Do one of the following within ninety-six (96) hours of discovery of a Critic
 | 1.3 | SC21 | The Network and Certificate Systems Security Requirements section 3 (Log Integrity Controls) | 26‐Sep‐19 | 4-Nov-2019 |
 
 \* Effective Date based on completion of 30‐day IPR review without filing of any Exclusion Notices.
-
-
 

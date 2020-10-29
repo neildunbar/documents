@@ -1389,7 +1389,7 @@ Additionally, the CA's security program MUST include an annual Risk Assessment t
 ### 5.5.1 Types of records archived
 
 ### 5.5.2 Retention period for archive
-The CA SHALL retain all documentation relating to certificate requests and the verification thereof, and all Certificates and revocation thereof, for at least seven years after any Certificate based on that documentation ceases to be valid.
+The CA SHALL retain all documentation relating to certificate requests and the verification thereof, and all Certificates and revocation thereof, for at least two years after any Certificate based on that documentation ceases to be valid.
 
 ### 5.5.3 Protection of archive
 

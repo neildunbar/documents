@@ -176,7 +176,7 @@ With the exception of sections 3.2.2.4 and 3.2.2.5, the CA MAY delegate the perf
 Before the CA authorizes a Delegated Third Party to perform a delegated function, the CA SHALL contractually require the Delegated Third Party to:
 
 1. Meet the qualification requirements of Section 5.3.1, when applicable to the delegated function;
-2. Retain documentation in accordance with Section 5.5.2;
+2. Retain all documentation pertaining to certificate requests, verification of certificate requests, issuance of Certificates and revocation of Certificates. If a certificate request does not result in the issuance of a Certificate, the request related documentation shall be retained for at least seven years. If a request results in the issuance of a Certificate, the documentation shall be retained for at least seven years after the Certificate ceases to be valid;
 3. Abide by the other provisions of these Requirements that are applicable to the delegated function; and
 4. Comply with (a) the CA's Certificate Policy/Certification Practice Statement or (b) the Delegated Third Party's practice statement that the CA has verified complies with these Requirements.
 
@@ -932,7 +932,7 @@ The CA SHALL disclose all Cross Certificates that identify the CA as the Subject
 ## 4.1 Certificate Application
 
 ### 4.1.1 Who can submit a certificate application
-In accordance with Section 5.5.2, the CA SHALL maintain an internal database of all previously revoked Certificates and previously rejected certificate requests due to suspected phishing or other fraudulent usage or concerns. The CA SHALL use this information to identify subsequent suspicious certificate requests.
+In accordance with Sections 5.4.1(4) and 5.4.3, the CA SHALL maintain an internal database of all previously revoked Certificates and previously rejected certificate requests due to suspected phishing or other fraudulent usage or concerns. The CA SHALL use this information to identify subsequent suspicious certificate requests.
 
 ### 4.1.2 Enrollment process and responsibilities
 Prior to the issuance of a Certificate, the CA SHALL obtain the following documentation from the Applicant:
@@ -1350,6 +1350,10 @@ The CA SHALL record at least the following events:
    5. System crashes, hardware failures, and other anomalies;
    6. Firewall and router activities; and
    7. Entries to and exits from the CA facility.
+   
+4. Suspicious Certificate information, including:
+   1. All Certificates which were revoked as a result of suspected phishing or other fraudulent usage or concerns;
+   2. All certificate requests which were rejected as a result of suspected phishing or other fraudulent usage or concerns.
 
 Log records MUST include the following elements:
 
@@ -1368,6 +1372,7 @@ The CA SHALL retain, for at least two years:
      2. the revocation or expiration of the final CA Certificate in that set of Certificates that have an X.509v3 `basicConstraints` extension with the `cA` field set to true and which share a common Public Key corresponding to the CA Private Key;
   2. Subscriber Certificate lifecycle management event records (as set forth in Section 5.4.1 (2)) after the revocation or expiration of the Subscriber Certificate;
   3. Any security event records (as set forth in Section 5.4.1 (3)) after the event occurred.
+  4. Any suspicious events (as set forth in Section 5.4.1(4)) after the event occurred.
 
 ### 5.4.4 Protection of Audit Log
 
@@ -1389,7 +1394,6 @@ Additionally, the CA's security program MUST include an annual Risk Assessment t
 ### 5.5.1 Types of records archived
 
 ### 5.5.2 Retention period for archive
-The CA SHALL retain all documentation relating to certificate requests and the verification thereof, and all Certificates and revocation thereof, for at least two years after any Certificate based on that documentation ceases to be valid.
 
 ### 5.5.3 Protection of archive
 
